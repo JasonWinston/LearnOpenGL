@@ -76,10 +76,14 @@ int main()
 
     // build and compile shaders
     // -------------------------
-    Shader pbrShader("2.1.2.pbr.vs", "2.1.2.pbr.fs");
-    Shader equirectangularToCubemapShader("2.1.2.cubemap.vs", "2.1.2.equirectangular_to_cubemap.fs");
-    Shader irradianceShader("2.1.2.cubemap.vs", "2.1.2.irradiance_convolution.fs");
-    Shader backgroundShader("2.1.2.background.vs", "2.1.2.background.fs");
+    Shader pbrShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.1.2.ibl_irradiance\\2.1.2.pbr.vs",
+		"G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.1.2.ibl_irradiance\\2.1.2.pbr.fs");
+    Shader equirectangularToCubemapShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.1.2.ibl_irradiance\\2.1.2.cubemap.vs", 
+		"G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.1.2.ibl_irradiance\\2.1.2.equirectangular_to_cubemap.fs");
+    Shader irradianceShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.1.2.ibl_irradiance\\2.1.2.cubemap.vs", 
+		"G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.1.2.ibl_irradiance\\2.1.2.irradiance_convolution.fs");
+    Shader backgroundShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.1.2.ibl_irradiance\\2.1.2.background.vs", 
+		"G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.1.2.ibl_irradiance\\2.1.2.background.fs");
 
 
     pbrShader.use();

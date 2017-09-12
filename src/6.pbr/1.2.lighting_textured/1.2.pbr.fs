@@ -81,7 +81,7 @@ vec3 fresnelSchlick(float cosTheta, vec3 F0)
 }
 // ----------------------------------------------------------------------------
 void main()
-{		
+{       
     vec3 albedo     = pow(texture(albedoMap, TexCoords).rgb, vec3(2.2));
     float metallic  = texture(metallicMap, TexCoords).r;
     float roughness = texture(roughnessMap, TexCoords).r;
@@ -124,7 +124,7 @@ void main()
         // multiply kD by the inverse metalness such that only non-metals 
         // have diffuse lighting, or a linear blend if partly metal (pure metals
         // have no diffuse light).
-        kD *= 1.0 - metallic;	  
+        kD *= 1.0 - metallic;     
 
         // scale light by NdotL
         float NdotL = max(dot(N, L), 0.0);        

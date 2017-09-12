@@ -76,9 +76,9 @@ int main()
 
     // build and compile shaders
     // -------------------------
-    Shader pbrShader("2.1.1.pbr.vs", "2.1.1.pbr.fs");
-    Shader equirectangularToCubemapShader("2.1.1.cubemap.vs", "2.1.1.equirectangular_to_cubemap.fs");
-    Shader backgroundShader("2.1.1.background.vs", "2.1.1.background.fs");
+    Shader pbrShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.1.1.ibl_irradiance_conversion\\2.1.1.pbr.vs", "G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.1.1.ibl_irradiance_conversion\\2.1.1.pbr.fs");
+    Shader equirectangularToCubemapShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.1.1.ibl_irradiance_conversion\\2.1.1.cubemap.vs", "G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.1.1.ibl_irradiance_conversion\\2.1.1.equirectangular_to_cubemap.fs");
+    Shader backgroundShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.1.1.ibl_irradiance_conversion\\2.1.1.background.vs", "G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.1.1.ibl_irradiance_conversion\\2.1.1.background.fs");
 
 
     pbrShader.use();

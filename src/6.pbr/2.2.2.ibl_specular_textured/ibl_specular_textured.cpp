@@ -81,12 +81,18 @@ int main()
 
     // build and compile shaders
     // -------------------------
-    Shader pbrShader("2.2.2.pbr.vs", "2.2.2.pbr.fs");
-    Shader equirectangularToCubemapShader("2.2.2.cubemap.vs", "2.2.2.equirectangular_to_cubemap.fs");
-    Shader irradianceShader("2.2.2.cubemap.vs", "2.2.2.irradiance_convolution.fs");
-    Shader prefilterShader("2.2.2.cubemap.vs", "2.2.2.prefilter.fs");
-    Shader brdfShader("2.2.2.brdf.vs", "2.2.2.brdf.fs");
-    Shader backgroundShader("2.2.2.background.vs", "2.2.2.background.fs");
+    Shader pbrShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.2.ibl_specular_textured\\2.2.2.pbr.vs", 
+		"G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.2.ibl_specular_textured\\2.2.2.pbr.fs");
+    Shader equirectangularToCubemapShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.2.ibl_specular_textured\\2.2.2.cubemap.vs", 
+		"G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.2.ibl_specular_textured\\2.2.2.equirectangular_to_cubemap.fs");
+    Shader irradianceShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.2.ibl_specular_textured\\2.2.2.cubemap.vs", 
+		"G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.2.ibl_specular_textured\\2.2.2.irradiance_convolution.fs");
+    Shader prefilterShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.2.ibl_specular_textured\\2.2.2.cubemap.vs", 
+		"G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.2.ibl_specular_textured\\2.2.2.prefilter.fs");
+    Shader brdfShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.2.ibl_specular_textured\\2.2.2.brdf.vs", 
+		"G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.2.ibl_specular_textured\\2.2.2.brdf.fs");
+    Shader backgroundShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.2.ibl_specular_textured\\2.2.2.background.vs", 
+		"G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.2.ibl_specular_textured\\2.2.2.background.fs");
 
     pbrShader.use();
     pbrShader.setInt("irradianceMap", 0);

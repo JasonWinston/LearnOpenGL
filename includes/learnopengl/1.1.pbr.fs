@@ -65,8 +65,8 @@ void main()
 
     // calculate reflectance at normal incidence; if dia-electric (like plastic) use F0 
     // of 0.04 and if it's a metal, use the albedo color as F0 (metallic workflow)    
-    vec3 F0 = vec3(0.04); //平面的基础反射率
-    F0 = mix(F0, albedo, metallic);//根据材质的反射率和金属程度计算较为准确的反射率
+    vec3 F0 = vec3(0.04); 
+    F0 = mix(F0, albedo, metallic);
 
     // reflectance equation
     vec3 Lo = vec3(0.0);
@@ -77,7 +77,7 @@ void main()
         vec3 H = normalize(V + L);
         float distance = length(lightPositions[i] - WorldPos);
         float attenuation = 1.0 / (distance * distance);
-        vec3 radiance = lightColors[i] * attenuation;//辐射率
+        vec3 radiance = lightColors[i] * attenuation;
 
         // Cook-Torrance BRDF
         float NDF = DistributionGGX(N, H, roughness);   

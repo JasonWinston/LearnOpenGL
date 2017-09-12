@@ -80,12 +80,18 @@ int main()
 
     // build and compile shaders
     // -------------------------
-    Shader pbrShader("2.2.1.pbr.vs", "2.2.1.pbr.fs");
-    Shader equirectangularToCubemapShader("2.2.1.cubemap.vs", "2.2.1.equirectangular_to_cubemap.fs");
-    Shader irradianceShader("2.2.1.cubemap.vs", "2.2.1.irradiance_convolution.fs");
-    Shader prefilterShader("2.2.1.cubemap.vs", "2.2.1.prefilter.fs");
-    Shader brdfShader("2.2.1.brdf.vs", "2.2.1.brdf.fs");
-    Shader backgroundShader("2.2.1.background.vs", "2.2.1.background.fs");
+    Shader pbrShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.1.ibl_specular\\2.2.1.pbr.vs", 
+		"G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.1.ibl_specular\\2.2.1.pbr.fs");
+    Shader equirectangularToCubemapShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.1.ibl_specular\\2.2.1.cubemap.vs", 
+		"G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.1.ibl_specular\\2.2.1.equirectangular_to_cubemap.fs");
+    Shader irradianceShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.1.ibl_specular\\2.2.1.cubemap.vs", 
+		"G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.1.ibl_specular\\2.2.1.irradiance_convolution.fs");
+    Shader prefilterShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.1.ibl_specular\\2.2.1.cubemap.vs", 
+		"G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.1.ibl_specular\\2.2.1.prefilter.fs");
+    Shader brdfShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.1.ibl_specular\\2.2.1.brdf.vs", 
+		"G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.1.ibl_specular\\2.2.1.brdf.fs");
+    Shader backgroundShader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.1.ibl_specular\\2.2.1.background.vs", 
+		"G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\2.2.1.ibl_specular\\2.2.1.background.fs");
 
     pbrShader.use();
     pbrShader.setInt("irradianceMap", 0);

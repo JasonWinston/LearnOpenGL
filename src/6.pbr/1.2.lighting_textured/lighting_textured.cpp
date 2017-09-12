@@ -75,7 +75,7 @@ int main()
 
     // build and compile shaders
     // -------------------------
-    Shader shader("1.2.pbr.vs", "1.2.pbr.fs");
+    Shader shader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\1.2.lighting_textured\\1.2.pbr.vs", "G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\1.2.lighting_textured\\1.2.pbr.fs");
 
     shader.use();
     shader.setInt("albedoMap", 0);

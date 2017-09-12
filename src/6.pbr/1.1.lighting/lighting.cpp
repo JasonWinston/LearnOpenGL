@@ -75,7 +75,7 @@ int main()
 
     // build and compile shaders
     // -------------------------
-    Shader shader("1.1.pbr.vs", "1.1.pbr.fs");
+    Shader shader("G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\1.1.lighting\\1.1.pbr.vs", "G:\\3DProgramming\\OpenGL\\OpenGLProjects\\LearnOpenGL\\src\\6.pbr\\1.1.lighting\\1.1.pbr.fs");
 
     shader.use();
     shader.setVec3("albedo", 0.5f, 0.0f, 0.0f);
